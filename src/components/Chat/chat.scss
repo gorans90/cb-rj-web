@@ -1,0 +1,72 @@
+.rce-mbox-right {
+    background: #873737;
+    color: #fff;
+    .rce-mbox-time {
+        color: rgba(255,255,255,.65);
+    }
+}
+.rce-mbox-right-notch {
+    fill: #873737;
+}
+.rce-mbox-body {
+    padding-bottom: 5px;
+}
+.rce-mlist {
+    padding-top: 5px;
+}
+.chat-view {
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    border: 2px solid #873737;
+}
+.chat-title {
+    background: #873737;
+    display: inline-flex;
+    width: 100%;
+    color: white;
+    h4 {
+        float: right;
+        font-size: 20px;
+    }
+    h5 {
+        width: 93%;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+}
+
+.chat-list {
+    min-width: 240px;
+	max-width: 250px;
+	overflow: auto;
+}
+
+.right-panel {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.message-list {
+	flex: 1;
+    min-width: 140px;
+    max-width: 400px;
+    color: black;
+    max-height: 420px;
+    min-height: 420px;
+
+    .rce-mlist {
+        background: #ececec;
+    }
+}
+
+.rce-container-input {
+    border-top: #873737 2px solid;
+
+    .rce-input {
+        border-radius: 0px;
+        padding-left: 15px;
+        margin-right: 0px;
+    }
+}

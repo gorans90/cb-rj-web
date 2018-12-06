@@ -1,0 +1,50 @@
+.login-form {
+    padding: 5px;
+}
+
+.login-btn {
+    height: 28px;
+    min-width: 70px;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    background: rgba(162,17,17,1);
+    background: -moz-linear-gradient(left, rgba(162,17,17,1) 0%, rgba(142,11,11,1) 16%, rgba(105,8,8,1) 55%, rgba(62,5,5,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(162,17,17,1)), color-stop(16%, rgba(142,11,11,1)), color-stop(55%, rgba(105,8,8,1)), color-stop(100%, rgba(62,5,5,1)));
+    background: -webkit-linear-gradient(left, rgba(162,17,17,1) 0%, rgba(142,11,11,1) 16%, rgba(105,8,8,1) 55%, rgba(62,5,5,1) 100%);
+    background: -o-linear-gradient(left, rgba(162,17,17,1) 0%, rgba(142,11,11,1) 16%, rgba(105,8,8,1) 55%, rgba(62,5,5,1) 100%);
+    background: -ms-linear-gradient(left, rgba(162,17,17,1) 0%, rgba(142,11,11,1) 16%, rgba(105,8,8,1) 55%, rgba(62,5,5,1) 100%);
+    background: linear-gradient(to right, rgba(162,17,17,1) 0%, rgba(142,11,11,1) 16%, rgba(105,8,8,1) 55%, rgba(62,5,5,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a21111', endColorstr='#3e0505', GradientType=1 );
+}
+
+.login-btn-div {
+    align-self: flex-end;
+}
+
+.logout-btn {
+    height: 23px;
+    min-width: 70px;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    background: rgba(162,17,17,1);
+    background: -moz-linear-gradient(left, rgba(162,17,17,1) 0%, rgba(142,11,11,1) 16%, rgba(105,8,8,1) 55%, rgba(62,5,5,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(162,17,17,1)), color-stop(16%, rgba(142,11,11,1)), color-stop(55%, rgba(105,8,8,1)), color-stop(100%, rgba(62,5,5,1)));
+    background: -webkit-linear-gradient(left, rgba(162,17,17,1) 0%, rgba(142,11,11,1) 16%, rgba(105,8,8,1) 55%, rgba(62,5,5,1) 100%);
+    background: -o-linear-gradient(left, rgba(162,17,17,1) 0%, rgba(142,11,11,1) 16%, rgba(105,8,8,1) 55%, rgba(62,5,5,1) 100%);
+    background: -ms-linear-gradient(left, rgba(162,17,17,1) 0%, rgba(142,11,11,1) 16%, rgba(105,8,8,1) 55%, rgba(62,5,5,1) 100%);
+    background: linear-gradient(to right, rgba(162,17,17,1) 0%, rgba(142,11,11,1) 16%, rgba(105,8,8,1) 55%, rgba(62,5,5,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a21111', endColorstr='#3e0505', GradientType=1 );
+}
+
+.logout-btn-div {
+    align-self: flex-end;
+    float: right;
+    margin-top: 3%;
+}
+
+.left-input-padd{
+    padding-right: 10px;
+    padding-left: 0px;
+}

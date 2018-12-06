@@ -1,0 +1,56 @@
+.left-side {
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+span {
+    color: #6f0303;
+    font-weight: bold;
+}
+
+.registration-form {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+    form {
+        width: 100%;
+    }
+    input {
+        width: 100%;
+    }
+}
+
+.padd-bottom{
+    padding-bottom: 1rem;
+}
+
+.sex-div {
+    margin-bottom: 5%;
+}
+
+.mt-80{
+    margin-top: 80px;
+    padding-top: 6rem;
+}
+
+.padding-section-1{
+    padding-right: 2rem;
+    padding-left: 0px;
+}
+
+.padding-section-2{
+    padding-right: 0px;
+    padding-left: 6rem;
+}
+
+.male-image{
+    width: 33%;
+}
+
+.female-img{
+    width: 50%;
+}

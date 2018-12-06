@@ -1,0 +1,108 @@
+.homepage {
+    background: rgba(6, 6, 6, 0.5);
+    color: black;
+    height: 100%;
+    min-height: 100%;
+    position: fixed;
+}
+
+.mt-80-pt-1 {
+    padding-top: 80px;
+}
+
+.news-feed, .channel-list {
+    background-color: #d6d6d6;
+    margin: 5px 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.news-feed {
+    overflow-y: scroll;
+}
+
+.channel-list {
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+}
+
+.channel-list-outside {
+    padding-left: 0px;
+    .search-user {
+        min-width: 180px;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        border-top: 0 none;
+        width: 97%;
+        background: #eaeaea;
+        margin-left: 10px;
+        .user-list {
+          display: flex;
+          flex-direction: column;
+          .user {
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+            cursor: pointer;
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              margin-left: 10px;
+            }
+            h2 {
+              padding-left: 8px;
+              flex-grow: 1;
+              font-size: 18px;
+            }
+            &:last-child {
+              border-bottom: 0 none;
+            }
+            &:hover {
+              background: rgba(0, 0, 0, 0.02);
+            }
+          }
+        }
+      }
+    
+}
+
+.rce-container-clist {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    .rce-citem {
+        background: transparent;
+        
+        .rce-citem-body {
+            border-bottom: 1px solid rgba(0,0,0,.15);
+        }
+    }
+    :hover {
+        background: #f7f7f7;
+    }
+}
+
+.user-search {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 15px;
+    .user-search-input {
+        width: 100%;
+        margin-right: 0px;
+        height: 40px;
+        border-radius: 10px;
+        background: white;
+    }
+}
+
+
+@media screen and (min-width: 1281px){
+    .news-feed {
+        max-width: 56% !important;
+    }
+}

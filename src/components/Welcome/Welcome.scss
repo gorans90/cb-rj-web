@@ -1,0 +1,23 @@
+//
+//
+
+img.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes rotateY {
+ from { transform: rotateY(0deg);}
+ to{ transform: rotateY(359deg);}
+}
+
+.logo {
+ animation: rotateY 6s infinite linear;
+ margin: 20px;
+}
+
+.input-area {
+	height: 50px;
+	background: red;
+}

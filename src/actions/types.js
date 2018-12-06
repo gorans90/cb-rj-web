@@ -1,0 +1,17 @@
+export const AUTH_USER = 'auth_user';
+export const UNAUTH_USER = 'unauth_user';
+export const COUNTRIES = 'countries';
+export const IMAGE_BYTES = 'image_bytes';
+export const USER_INFO = 'user_info';
+export const RECENT_POSTS = 'recent_posts';
+export const UPDATED_POST = 'updated_post';
+export const POST = 'post';
+export const REQUEST_SENT = 'request_sent';
+export const RESPONSE_RECEIVED = 'response_received';
+export const RESET_LOADER = 'RESET_LOADER';
+export const SEARCH_USER_RESULTS = 'search_user_results';
+export const ACTIVE_CHANNEL = 'active_channel';
+export const CHANNELS = 'channels';
+export const LOGGED_USER = 'logged_user';
+export const OPEN_CHANNELS = 'open_channels';
+export const REALTIME = 'realtime';
