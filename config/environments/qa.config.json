@@ -1,4 +1,9 @@
-{  
-  "API": "qa-env-api-url",
-  "TIMEZONEDB_API": "https://api.timezonedb.com/v2/get-time-zone"
-}
+{
+    "API": "https://cb-sb-api.herokuapp.com",
+    "LOCAL-API": "http://localhost:8090",
+    "NODE_API": "https://cb-nj-api.herokuapp.com",
+    "TIMEZONEDB_API": "http://api.timezonedb.com/v2/get-time-zone",
+    "COUNTRIES_API": "https://restcountries.eu/rest/v2/all",
+    "WEBSOCKET_URL": "ws://localhost:3002"
+  }
+  

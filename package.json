@@ -4,24 +4,27 @@
   "description": "CarBook",
   "main": "index.js",
   "engines": {
-    "node": ">=4.5.0",
-    "npm": "3.0.0"
+    "node": ">=10.13.0",
+    "npm": "6.4.1"
   },
   "scripts": {
-    "clean": "rimraf dist",
+    "clean": "rimraf dist && rimraf target && mkdirp target",
     "compile": "better-npm-run compile",
     "lint": "eslint bin build config server src tests",
     "lint:fix": "npm run lint -- --fix",
     "start": "better-npm-run start",
+    "quickstart": "better-npm-run quickstart",
     "debug": "better-npm-run debug",
     "dev": "better-npm-run dev",
     "test": "mocha --compilers js:babel-core/register --require ./tests/test_helper.js --require ignore-styles --recursive ./tests",
     "test:watch": "npm run test -- --watch",
     "test:dev": "npm run test -- --watch",
-    "deploy": "better-npm-run deploy",
-    "devbuild": "better-npm-run deploy:dev",
-    "qabuild": "better-npm-run deploy:qa",
-    "prodbuild": "better-npm-run deploy:prod",
+    "build": "better-npm-run build",
+    "devbuild": "better-npm-run build:dev",
+    "qabuild": "better-npm-run build:qa",
+    "stagingbuild": "better-npm-run build:staging",
+    "prodbuild": "better-npm-run build:prod",
+    "move": "mkdirp dist/target && ncp target dist/target && rimraf target",
     "codecov": "cat coverage/*/lcov.info | codecov"
   },
   "betterScripts": {
@@ -38,28 +41,35 @@
         "DEBUG": "app:*"
       }
     },
-    "deploy": {
+    "build": {
       "command": "npm run clean && npm run compile",
       "env": {
         "DEBUG": "app:*"
       }
     },
-    "deploy:dev": {
-      "command": "npm run deploy",
+    "build:dev": {
+      "command": "npm run build",
       "env": {
         "NODE_ENV": "development",
         "DEBUG": "app:*"
       }
     },
-    "deploy:qa": {
-      "command": "npm run deploy",
+    "build:qa": {
+      "command": "npm run build",
       "env": {
         "NODE_ENV": "qa",
         "DEBUG": "app:*"
       }
     },
-    "deploy:prod": {
-      "command": "npm run deploy",
+    "build:staging": {
+      "command": "npm run build",
+      "env": {
+        "NODE_ENV": "staging",
+        "DEBUG": "app:*"
+      }
+    },
+    "build:prod": {
+      "command": "npm run build",
       "env": {
         "NODE_ENV": "production",
         "DEBUG": "app:*"
@@ -67,6 +77,12 @@
     },
     "start": {
       "command": "npm run lint:fix && node bin/dev-server",
+      "env": {
+        "DEBUG": "app:*"
+      }
+    },
+    "quickstart": {
+      "command": "node bin/dev-server",
       "env": {
         "DEBUG": "app:*"
       }
@@ -83,6 +99,11 @@
       "env": {
         "DEBUG": "app:*"
       }
+    }
+  },
+  "eslintConfig": {
+    "globals": {
+      "google": true
     }
   },
   "repository": {
@@ -118,6 +139,7 @@
     "material-ui-upload": "1.2.1",
     "moment": "2.19.2",
     "moment-timezone": "0.5.16",
+    "natives": "1.1.6",
     "node-sass": "4.9.2",
     "normalize.css": "7.0.0",
     "postcss-loader": "2.0.9",
